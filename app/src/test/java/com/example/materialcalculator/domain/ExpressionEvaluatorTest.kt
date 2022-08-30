@@ -50,6 +50,7 @@ class ExpressionEvaluatorTest{
     fun `Simple equation with parentheses properly evaluated`(){
         evaluator = ExpressionEvaluator(
             listOf(
+                ExpressionPart.Op(Operation.SUBTRACT),
                 ExpressionPart.Number(4.0),
                 ExpressionPart.Op(Operation.ADD),
                 ExpressionPart.Parentheses(ParenthesesType.Opening),
@@ -64,7 +65,7 @@ class ExpressionEvaluatorTest{
             )
         )
 
-        assertThat(evaluator.evaluate()).isEqualTo(6.5)
+        assertThat(evaluator.evaluate()).isEqualTo(-1.5)
     }
 
 
