@@ -30,7 +30,7 @@ fun CalculatorScreen(
                     .clip(RoundedCornerShape(bottomStart = 25.dp, bottomEnd = 25.dp))
                     .background(MaterialTheme.colorScheme.secondaryContainer)
                     .padding(
-                        vertical = 64.dp,
+                        vertical = 50.dp,
                         horizontal = 16.dp
                     )
             )
